@@ -3,8 +3,9 @@
 
 # 矿工交流 TG电报群：https://t.me/niuminerproxy
 
-<img src="https://minerproxy.vip/css/2.png" alt="">
-<img src="https://minerproxy.vip/css/4.png" alt="">
+<img src="https://minerproxy.vip/niu/1.png" alt="">
+<img src="https://minerproxy.vip/niu/2.png" alt="">
+<img src="https://minerproxy.vip/niu/3.png" alt="">
 
 # Linux-一键安装脚本
 好处：适合又想要Linux稳定性的，又不懂Linux的小白的学习者<br />
