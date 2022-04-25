@@ -170,8 +170,8 @@ start_write_config() {
     echo
     cat /etc/niuminerproxy/conf.yaml
     IP=$(curl -s ifconfig.me)
-    port=$(grep -i "port" /etc/ethminerproxy/conf.yaml | cut -c8-12 | sed 's/\"//g' | head -n 1)
-    password=$(grep -i "password" /etc/ethminerproxy/conf.yaml | cut -c12-17)
+    port=$(grep -i "port" /etc/niuminerproxy/conf.yaml | cut -c8-12 | sed 's/\"//g' | head -n 1)
+    password=$(grep -i "password" /etc/niuminerproxy/conf.yaml | cut -c12-17)
     echo "install done, please open the URL to login, http://$IP:$port , password is: $password"
     echo "程序启动成功, WEB访问端口${port}, 密码${password}"
     echo "----------------------------------------------------------------"
@@ -224,8 +224,8 @@ update(){
     echo "以上是配置文件信息"
     echo "niuminerproxy 已經更新至最新版本並啟動"
     IP=$(curl -s ifconfig.me)
-    port=$(grep -i "port" /etc/ethminerproxy/conf.yaml | cut -c8-12 | sed 's/\"//g' | head -n 1)
-    password=$(grep -i "password" /etc/ethminerproxy/conf.yaml | cut -c12-17)
+    port=$(grep -i "port" /etc/niuminerproxy/conf.yaml | cut -c8-12 | sed 's/\"//g' | head -n 1)
+    password=$(grep -i "password" /etc/niuminerproxy/conf.yaml | cut -c12-17)
     echo "install done, please open the URL to login, http://$IP:$port , password is: $password"
     echo "程序启动成功, WEB访问端口${port}, 密码${password}"
     exit
