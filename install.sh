@@ -72,7 +72,7 @@ install_download() {
         service supervisord restart
     fi
     [ -d ./niuminerproxy ] && rm -rf ./niuminerproxy
-    git clone https://github.com/niuminerproxy/niuminer.git
+    git clone --depth=1 https://github.com/niuminerproxy/niuminer.git
 
     if [[ ! -d ./niuminer ]]; then
         echo
@@ -199,7 +199,7 @@ update(){
     [ -d ./niuminer ] && rm -rf ./niuminer
 
 
-    git clone https://github.com/niuminerproxy/niuminer.git
+    git clone --depth=1 https://github.com/niuminerproxy/niuminer.git
 
     if [[ ! -d ./niuminer ]]; then
         echo
