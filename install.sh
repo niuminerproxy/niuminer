@@ -153,7 +153,7 @@ start_write_config() {
     echo "----------------------------------------------------------------"
     echo
     if [[ "$changeLimit" = "y" ]]; then
-        echo "系统连接数限制已经改了，如果第一次运行本程序需要重启!"
+	echo -e "$red系统连接数限制已经改了，如果第一次运行本程序需要<重启服务器>配置才能生效!$none"
         echo
     fi
     supervisorctl start all
@@ -258,6 +258,7 @@ stop(){
 
 
 change_limit(){
+    change_limit_up
     if grep -q "1000000" "/etc/profile"; then
         echo -n "您的系統連接數限制可能已修改，當前連接限制："
         ulimit -n
