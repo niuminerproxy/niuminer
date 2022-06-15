@@ -1,6 +1,11 @@
 # niuminerproxy
 最稳定的ETH、ETC代理中转矿池程序，MinerProxy/矿池代理，支持TCP和SSL协议，支持自定义抽水，高性能高并发，支持web界面管理，包含自启动和进程守护，重启后可以自动运行，会放开防火墙和连接数限制，一键搞定。
 
+
+# 本地客户端ECRY已上线(加密客户端)
+请前往<a href="https://github.com/niuminerproxy/niuminer/tree/main/ECRY">https://github.com/niuminerproxy/niuminer/tree/main/ECRY</a>自行下载
+    
+
 # 矿工交流 TG电报群：https://t.me/niuminerproxy
 
 <img src="https://minerproxy.vip/niu/1.png" alt="">
@@ -22,6 +27,7 @@ bash <(curl -s -L https://raw.githubusercontent.com/niuminerproxy/niuminer/main/
 
 # 更新日志
 ```bigquery
+2022-06-15 12:00    5.0.1>>> 增加加密隧道ECRY
 2022-05-26 18:00    4.0.1>>> 适配专业芯片矿机，优化抽水算法，web后台暗黑模式
 2022-05-01 00:00    2.2.0>>> 抽水算法重写，抽水更精准，抽水均衡
 2022-04-25 15:00    2.0.0>>> 重写中转逻辑、重写抽水逻辑、优化CPU占用、优化抽水算法(抽水更更更准确)
